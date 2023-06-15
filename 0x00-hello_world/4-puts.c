@@ -2,7 +2,8 @@
 
 /**
  * Main fn - Just prints this line
- * @parameter: takes none
+ * 
+ * @Return: Returns 0 when complete
  */
 int main(void)
 {
