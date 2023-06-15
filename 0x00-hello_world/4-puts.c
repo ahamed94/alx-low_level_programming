@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * Main fn - Just prints this line
+ * main - Just prints this line
  * 
  * @Return: Returns 0 when complete
  */
