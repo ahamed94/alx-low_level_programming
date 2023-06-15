@@ -2,8 +2,7 @@
 
 /**
  * main - Just prints this line
- * 
- * @Return: Returns 0 when complete
+ * Return: Returns 0 when complete
  */
 int main(void)
 {
