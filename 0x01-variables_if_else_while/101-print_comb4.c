@@ -12,7 +12,7 @@ int main(void)
 
 	for (one = 0; one < 10; one++)
 	{
-		for(two = 1 + one; two < 10; two++)
+		for (two = 1 + one; two < 10; two++)
 		{
 			for (three = 1 + two; three < 10; three++)
 			{
@@ -21,7 +21,7 @@ int main(void)
 				putchar(three % 10 + '0');
 				if (one == 7 && two == 8 && three == 9)
 					break;
-			       	putchar(',');
+				putchar(',');
 				putchar(' ');
 			}
 		}
