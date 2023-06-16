@@ -4,14 +4,14 @@
  * main - Has to start here
  * Return: Returns 0 when successful
  */
-int main()
+int main(void)
 {
 	int one;
 	int two;
 
 	for (one = 0; one < 10; one++)
 	{
-		for(two = 1 + one; two < 10; two++)
+		for (two = 1 + one; two < 10; two++)
 		{
 			putchar(one % 10 + '0');
 			putchar(two % 10 + '0');
@@ -22,5 +22,5 @@ int main()
 		}
 	}
 	putchar('\n');
-	return 0;
+	return (0);
 }
