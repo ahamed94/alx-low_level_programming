@@ -1,37 +1,35 @@
 #include <stdio.h>
 
 /**
- * main - Has to start here
- * Return: Returns 0 when successful
+ * main - Start function
+ * Return: 0 (success)
  */
 int main(void)
 {
-	int one1;
-	int two1;
-	int one2;
-	int two2;
+	int firstDigit = 0, seconDigit;
 
-	for (one1 = 0; one1 < 10; one1++)
+	while (firstDigit <= 99)
 	{
-		for (two1 = 0 ; two1 < 10; two1++)
+		seconDigit = firstDigit;
+	
+		while (seconDigit <= 99)
 		{
-			for (one2 = one1; one2 < 10; one2++)
+			if (firstDigit != seconDigit)
 			{
-				for (two2 = 1 + two1; two2 < 10; two2++)
+				putchar((firstDigit / 10) + 48);
+				putchar((firstDigit % 10) + 48);
+				putchar(' ');
+				putchar((seconDigit / 10) + 48);
+				putchar((seconDigit % 10) + 48);
+				if (firstDigit != 98 || seconDigit != 99)
 				{
-					putchar(one1 % 10 + '0');
-					putchar(two1 % 10 + '0');
-					putchar(' ');
-					putchar(one2 % 10 + '0');
-					putchar(two2 % 10 + '0');
-					if (one1 == 9 && two1 == 8 && one2 == 9 && two2 == 9)
-						break;
 					putchar(',');
 					putchar(' ');
 				}
-				two2 = 0;
 			}
+			seconDigit++;
 		}
+		firstDigit++;
 	}
 	putchar('\n');
 	return (0);
