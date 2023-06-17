@@ -15,7 +15,7 @@ int main(void)
 	{
 		for (two1 = 0 ; two1 < 10; two1++)
 		{
-			for (one2 = 0 + one1; one2 < 10; one2++)
+			for (one2 = one1; one2 < 10; one2++)
 			{
 				for (two2 = 1 + two1; two2 < 10; two2++)
 				{
@@ -29,6 +29,7 @@ int main(void)
 					putchar(',');
 					putchar(' ');
 				}
+				two2 = 0;
 			}
 		}
 	}
