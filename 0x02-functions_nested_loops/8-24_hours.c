@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- * print_last_digit - prints last digit of a #
- * @n: Number to get last digit
- * Return: Last digit
+ * jack_bauer - prints minutes in 24hrs
+ * Return: None
  */
 
 void jack_bauer(void)
@@ -22,8 +21,8 @@ void jack_bauer(void)
 					_putchar(i2 + '0');
 					_putchar(':');
 					_putchar(j1 + '0');
-					_putchar(j2+ '0');
+					_putchar(j2 + '0');
 					_putchar('\n');
-				}	
+				}
 		}
 }
