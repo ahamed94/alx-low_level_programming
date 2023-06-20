@@ -2,16 +2,16 @@
 #include "main.h"
 
 /**
- * _islower - Determines whether Capital
- * @c: char to be checked
- * Return: 1 if lowercase, 0 if otherwise
+ * print_to_98 - prints to 98
+ * @n: Number to count from
+ * Return: Nothing
  */
 
 void print_to_98(int n)
 {
 	printf("%d", n);
-	if(n < 98)
-		while(n < 98)
+	if (n < 98)
+		while (n < 98)
 		{
 			printf(", ");
 			printf("%d", ++n);
