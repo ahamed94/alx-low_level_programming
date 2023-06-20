@@ -2,7 +2,8 @@
 
 /**
  * _islower - Determines whether Capital
- * @c - Char ascii that we check
+ * @c - char to be checked
+ *
  * Return: 1 if lowercase, 0 if otherwise
  */
 
