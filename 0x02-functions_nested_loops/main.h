@@ -22,3 +22,11 @@ void print_alphabet(void);
  */
 
 void print_alphabet_x10(void);
+
+/**
+ * _islower - Determines whether Capital
+ * @c - Char ascii that we check
+ * Return: 1 if lowercase, 0 if otherwise
+ */
+
+int _islower(int c);
