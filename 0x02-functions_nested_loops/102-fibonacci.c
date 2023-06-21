@@ -16,7 +16,7 @@ int main(void)
 		tmp = s1 + s2;
 		s1 = s2;
 		s2 = tmp;
-		printf("%d, ", s2);
+		printf("%ld, ", s2);
 	}
 	printf("\n");
 	return (0);
