@@ -10,8 +10,7 @@ int main(void)
         long int s1 = 1, s2 = 2, tmp, sum = 0;
         int i;
 
-        printf("1, 2, ");
-        for (i = 2; i < 50; i++)
+        for (i = 1; i < 50; i++)
         {
 		if (s1 + s1 < 4000000 && i%2 == 0)
 			sum += s1 + s2;
