@@ -10,7 +10,7 @@ int main(void)
 	long int s1 = 1, s2 = 2, tmp, sum = 0;
 	int i;
 
-	for (i = 2; i < 32; i++)
+	for (i = 0; i < 60; i++)
 	{
 		if (s1 > 4000000)
 			break;
