@@ -12,8 +12,10 @@ int main(void)
 
 	for (i = 2; i < 32; i++)
 	{
-		if (s2 < 4000000 && i % 2 == 0)
-			sum += s1 + s2;
+		if (s1 > 4000000)
+			break;
+		if (s1 % 2 == 0)
+			sum += s1;
 	       tmp = s1 + s2;
 	       s1 = s2;
 	       s2 = tmp;
