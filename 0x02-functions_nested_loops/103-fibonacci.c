@@ -8,16 +8,16 @@
 int main(void)
 {
         long int s1 = 1, s2 = 2, tmp, sum = 0;
-        int i;
+	int i;
 
-        for (i = 1; i < 50; i++)
-        {
-		if (s1 + s1 < 4000000 && i%2 == 0)
-			sum += s1 + s2;
-                tmp = s1 + s2;
-                s1 = s2;
-                s2 = tmp;
-        }
-        printf("%ld\n", sum);
-        return (0);
+	for (i = 2; i < 100; i++)
+	{
+	       if (s1 + s1 < 4000000 && i%2 == 0)
+		       sum += s1 + s2;
+	       tmp = s1 + s2;
+	       s1 = s2;
+	       s2 = tmp;
+	}
+	printf("%ld\n", sum);
+	return (0);
 }
