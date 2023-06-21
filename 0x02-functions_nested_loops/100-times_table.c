@@ -9,5 +9,5 @@
 
 void print_times_table(int n)
 {
-	printf("Test");
+	printf("Test %d", n);
 }
