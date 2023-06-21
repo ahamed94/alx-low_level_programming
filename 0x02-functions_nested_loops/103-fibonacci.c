@@ -14,7 +14,7 @@ int main(void)
         for (i = 2; i < 50; i++)
         {
 		if (s1 + s1 < 4000000 && i%2 == 0)
-			sum += s1 + s2
+			sum += s1 + s2;
                 tmp = s1 + s2;
                 s1 = s2;
                 s2 = tmp;
