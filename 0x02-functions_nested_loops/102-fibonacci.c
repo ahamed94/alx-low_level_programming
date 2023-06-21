@@ -11,12 +11,14 @@ int main(void)
 	int i;
 
 	printf("1, 2, ");
-	for (i = 2; i <= 50; i++)
+	for (i = 2; i < 50; i++)
 	{
 		tmp = s1 + s2;
 		s1 = s2;
 		s2 = tmp;
-		printf("%ld, ", s2);
+		printf("%ld", s2);
+		if (i < 49)
+			printf(", ");
 	}
 	printf("\n");
 	return (0);
