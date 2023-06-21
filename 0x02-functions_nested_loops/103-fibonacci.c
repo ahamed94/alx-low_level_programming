@@ -10,7 +10,7 @@ int main(void)
 	long int s1 = 1, s2 = 2, tmp, sum = 0;
 	int i;
 
-	for (i = 2; i < 33; i++)
+	for (i = 2; i < 34; i++)
 	{
 		if (s1 + s1 < 4000000 && i % 2 == 0)
 			sum += s1 + s2;
