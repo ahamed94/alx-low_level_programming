@@ -18,10 +18,7 @@ int main(void)
                 tmp = s1 + s2;
                 s1 = s2;
                 s2 = tmp;
-                printf("%ld", s2);
-                if (i < 49)
-                        printf(", ");
         }
-        printf("\n");
+        printf("%ld\n", sum);
         return (0);
 }
