@@ -8,5 +8,8 @@
 
 int _isupper(int c)
 {
-	return (c < 91 && c > 64);
+	if (c > 64 && c < 91)
+		return (1);
+	else
+		return (0);
 }
