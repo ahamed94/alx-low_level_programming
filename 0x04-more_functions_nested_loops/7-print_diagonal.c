@@ -9,11 +9,11 @@
 void print_diagonal(int n)
 {
 	if (n <= 0)
-		printf("\n");
+		_putchar('\n');
 
 	else
 	{
-		printf("\\");
+		_putchar('\\');
 		print_diagonal(n - 1);
 	}
 }
