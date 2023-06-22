@@ -2,10 +2,9 @@
 
 /**
  * print_number - prints int with _putchar
- * @n: number 
+ * @n: number
  * Return: none
  */
-
 void print_number(int n)
 {
 	unsigned int ten, single, positive = n;
