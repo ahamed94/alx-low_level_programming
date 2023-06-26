@@ -10,10 +10,10 @@
 void rev_string(char *s)
 {
 	int i = strlen(s), j = 0;
-	char tmp[i];
+	char *tmp = malloc(i);
 
 	strcpy(tmp, s);
 
-	while (i >= 0)
+	while (i > 0)
 		*(s + j++) = *(tmp + --i);
 }
