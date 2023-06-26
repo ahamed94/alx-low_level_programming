@@ -14,7 +14,7 @@ void puts_half(char *str)
 	i = (size + size % 2) / 2;
 
 	while (i < size)
-		printf("%c", *(str + i++);
+		printf("%c", *(str + i++));
 
 	printf("\n");
 }
