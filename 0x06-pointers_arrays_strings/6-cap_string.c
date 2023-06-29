@@ -13,6 +13,10 @@ int isUpperLetter(char c)
 
 	if (c > 64 && c < 91)
 		i++;
+	else if (c == ',' || c == ';' || c == '.' || c == '!' || c == '?' ||
+			c == '"' || c == '(' || c == ')' || c == '{' ||
+			c == '}' || c == ' ' || c == 9 || c == '\n')
+		i = -2;
 	else if (c > 96 && c < 123)
 		i--;
 
@@ -28,16 +32,13 @@ int isUpperLetter(char c)
 
 char *cap_string(char *c)
 {
-	int i, checker = 0;
+	int i, checker = -2;
 
 	for (i = 0; c[i] != '\0'; i++)
 	{
 
-		if (checker == 0 && isUpperLetter(c[i]) == -1)
-		{
+		if (checker == -2 && isUpperLetter(c[i]) == -1)
 			c[i] -= 32;
-			checker = 1;
-		}
 		checker = isUpperLetter(c[i]);
 	}
 	return (c);
