@@ -16,4 +16,8 @@ void reverse_array(int *a, int n);
 
 char *string_toupper(char *);
 
+int isUpperLetter(char);
+
+char *cap_string(char*);
+
 #endif
