@@ -2,12 +2,12 @@
 
 /**
  * leet - l33t
- * @c: Char to check
+ * @s: Char to check
  *
  * Return: Ptr to string
  */
 
-char *leet(char *c)
+char *leet(char *s)
 {
 
 	int a[11] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
