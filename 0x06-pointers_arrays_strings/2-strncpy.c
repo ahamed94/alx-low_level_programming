@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strcat - Copies one string to another
+ * _strncpy - Copies one string to another
  * @dest: first and source str
  * @src: to be copied
  * @n: number of bytes
