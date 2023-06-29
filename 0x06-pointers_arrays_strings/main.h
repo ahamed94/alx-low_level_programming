@@ -20,4 +20,6 @@ int isUpperLetter(char);
 
 char *cap_string(char*);
 
+char *leet(char *);
+
 #endif
