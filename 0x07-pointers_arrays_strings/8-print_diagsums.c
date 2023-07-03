@@ -8,7 +8,7 @@
  * Return: None
  */
 
-void print_diagsums(int *a), int size)
+void print_diagsums(int *a, int size)
 {
 	int tRight = 0, tLeft = 0;
 
