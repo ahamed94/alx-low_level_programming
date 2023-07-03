@@ -8,14 +8,23 @@
  * Return: None
  */
 
-void print_diagsums(int **a, int size)
+void print_diagsums(int *a), int size)
 {
-	int i, j, tRight = 0, tLeft = 0;
+	int tRight = 0, tLeft = 0;
 
-	for (i = 0; i < size; i++)
+	int row, i;
+
+	for (row = 0; row < size; row++)
 	{
-		tRight += a[i][i];
-		tLeft += a[i][size - i - 1];
+		i = (row * size) + row;
+		tRight += a[i];
 	}
+
+	for (row = 1; row <= size; row++)
+	{
+		i = (row * size) - row;
+		tLeft += a[i];
+	}
+
 	printf("%d, %d\n", tRight, tLeft);
 }
