@@ -11,7 +11,7 @@
 char *create_array(unsigned int size, char c)
 {
 	char *ptr;
-	int i;
+	int i = 0;
 
 	if (size <= 0)
 		return (NULL);
@@ -20,7 +20,7 @@ char *create_array(unsigned int size, char c)
 	if (ptr == NULL)
 		return (NULL);
 
-	while (i < (int)size) /* set array values to char c */
+	while (i < (int)size)
 	{
 		ptr[i] = c;
 		i++;
