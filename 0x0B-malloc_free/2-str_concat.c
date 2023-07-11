@@ -16,20 +16,14 @@ char *str_concat(char *s1, char *s2)
 	if (ptr == NULL)
 		return (NULL);
 
-	if (s1 == NULL && s2 == NULL)
-		strcat(ptr, "");
+	if (s1 == NULL)
+		s1 = "";
 
-	else if (s1 == NULL)
-		strcat(ptr, s2);
+	if (s2 == NULL)
+		s2 = "";
 
-	else if (s2 == NULL)
-		strcat(ptr, s1);
-
-	else
-	{
-		strcat(ptr, s1);
-		strcat(ptr, s2);
-	}
+	strcat(ptr, s1);
+	strcat(ptr, s2);
 
 	return (ptr);
 }
