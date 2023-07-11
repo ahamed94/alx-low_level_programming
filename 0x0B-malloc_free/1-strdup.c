@@ -9,5 +9,11 @@
 
 char *_strdup(char *str)
 {
-	return (strdup(str));
+	char *ptr;
+
+	if (*str == NULL)
+		return (NULL);
+	*ptr = strdup(str);
+
+	return (ptr);
 }
